@@ -7,7 +7,7 @@ while int(number) != random_number:
     print ("Incorrect")
     print (number)
     input("Try again")
-    
+    break
 if ("Try again") == random_number:
     print ("Correct")
 if int(number) < random_number:
