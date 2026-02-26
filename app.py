@@ -18,15 +18,19 @@ if int(y) != random_number:
     z = input("Try again3") """
 
 
-
+history = []
 while int(number) != random_number:
     print ("Incorrect")
+    history.append(number)
     print (number)
     if int(number) > random_number:
         print ("Too high")
     if int(number) < random_number:
         print ("Too low")
     number = input("Try again")
+    print (history)
     
 else:
     print ("Correct") 
+for x in history:
+    print (x)
